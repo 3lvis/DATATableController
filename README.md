@@ -1,14 +1,14 @@
 # DATATableController
 
-[![CI Status](http://img.shields.io/travis/3lvis/DATATableController.svg?style=flat)](https://travis-ci.org/3lvis/DATATableController)
-[![Version](https://img.shields.io/cocoapods/v/DATATableController.svg?style=flat)](http://cocoadocs.org/docsets/DATATableController)
-[![License](https://img.shields.io/cocoapods/l/DATATableController.svg?style=flat)](http://cocoadocs.org/docsets/DATATableController)
-[![Platform](https://img.shields.io/cocoapods/p/DATATableController.svg?style=flat)](http://cocoadocs.org/docsets/DATATableController)
-
 ## Usage
 
 ```objc
-<API>
+NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Task"];
+fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
+
+DATATableController *controller = [[DATATableController alloc] initForEntity:@"User" fetchRequest:fetchRequest];
+
+// Networking + Sync + DATASource
 ```
 
 ## Installation
