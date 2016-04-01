@@ -9,8 +9,6 @@ NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Task
 fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
 
 DATATableController *controller = [[DATATableController alloc] initWithFetcher:self.fetcher ForEntity:@"User" fetchRequest:fetchRequest];
-
-// Networking + Sync + DATASource
 ```
 
 ## Installation
