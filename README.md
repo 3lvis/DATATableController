@@ -11,15 +11,6 @@ fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title
 DATATableController *controller = [[DATATableController alloc] initWithFetcher:self.fetcher ForEntity:@"User" fetchRequest:fetchRequest];
 ```
 
-## Installation
-
-**DATATableController** is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'DATATableController'
-```
-
 ## Author
 
 Elvis Nuñez, elvisnunez@me.com
